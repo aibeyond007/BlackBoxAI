@@ -1,0 +1,23 @@
+{
+    "semi": true,
+    "singleQuote": 
+  true,
+    "trailingComma": "all",
+    "jsxSingleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "overrides": [
+      {
+        "files": "*.js", "options": {
+          "parser": "babel"
+        }
+      },
+      {
+        "files": "*.jsx",
+        "options": {
+          "parser": "babel-jsx"
+        }
+      }
+    ],
+    "plugins": ["prettier-plugin-jsdoc"]
+  }

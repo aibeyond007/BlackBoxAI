@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+
+  body {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font to the entire body */
+  }
+
+
+  
+  .History {
+    flex: 1;
+    overflow-y: scroll;
+  }
+  
+  .Message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+
+  
+
+  .assistant {
+    background-color: rgb(19, 18, 18);
+
+    color: antiquewhite;
+  }
+
+  .assistant-message {
+    overflow: hidden;
+    white-space: normal;
+    animation: bounceAnimation 4s ease forwards;
+  }
+  
+  @keyframes bounceAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+
+  
+  .UserInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+  }
+  
+  .UserInput input {
+    flex: 3; /* Adjust the flex value to increase the width */
+    min-height: calc(30 * 1.5em); /* Adjust the minimum height to accommodate 30 lines */
+    max-height: calc(3000 * 1.5em); /* Adjust the maximum height to accommodate 3000 lines */
+    border: none;
+    outline: 2px solid #00000062; /* Add an outline */
+    outline-offset: -2px; /* Offset the outline to remove it from the input field */
+    font-size: 20px;
+    line-height: 1.5; /* Adjust line height as needed */
+    color: rgb(255, 255, 255); /* Set text color to white */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+      rgba(17, 16, 16, 0.05) 0 -12px 30px,
+      rgba(15, 3, 3, 0.05) 0 4px 6px,
+      rgba(0, 0, 0, 0.05) 0 12px 3px,
+      rgba(0, 0, 0, 0.05) 0 -3px 5px;
+    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    margin-bottom: 40px;
+    z-index: 0;
+  }
+  
+  
+  .UserInput button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .UserInput button:hover {
+    background-color: #0056b3;
+  }
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.ChatHistory {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Firefox */
+.ChatHistory::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Hide scrollbar for IE, Edge, and Safari */
+.ChatHistory {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: You can also style the thumb and track if needed */
+.ChatHistory::-webkit-scrollbar-thumb {
+  display: none; /* Hide the scrollbar thumb */
+}
+
+.ChatHistory::-webkit-scrollbar-track {
+  display: none; /* Hide the scrollbar track */
+}
+
+
+.downloadIconContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Move up by 20px */
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.Message {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+    
+  }
+
+
+
+
+.assistant {
+  background-color: rgb(23, 29, 23);
+  opacity: 60%;
+  background: linear-gradient(to right, rgba(23, 29, 23, 0.6), transparent);
+}
+
+.UserInput {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.UserInput input {
+  flex: 1;
+  margin-right: 10px;
+  
+}
+
+.UserInput button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.UserInput button:hover {
+  background-color: #0056b3;
+}
+  

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Apply Open Sans font to the body */
+  color: rgb(210, 249, 252); /* Set text
+color to white */
+  overflow: hidden;
+  white-space: nowrap;
+  animation: bounceAnimation 4s ease
+forwards;
+}
+
+@keyframes bounceAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px);
+}
+}
+
+
+
+
+.Overlay {
+  position: fixed; /* or 'absolute' depending on your layout */
+  top: 0;
+  left: 0;
+  width:
+100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 100; /*
+Ensure it sits above other content */
+}
+
+.GeneratedImageContainer {
+  position: fixed; /* or 'absolute' */
+  top: 50%;
+left: 50%;
+  transform: translate(-50%, -50%); /* Center the container */
+  z-index: 101; /* Above the overlay */
+}
+.GeneratedImage {
+  max-width: 90%; /* Limit the image size */
+  max-height: 90vh; /* Limit the image height to viewport
+height */
+  border: 3px solid white; /* Optional: white border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0,
+0.5); /* Optional: shadow for image */
+}
+
+
+.WeatherWidgetContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  width: 650px; /* Adjust width as needed */
+  height: 450px; /* Adjust height as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background */
+  border-radius: 10px; /* Rounded corners for the widget */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect for the widget */
+}
+
+.WeatherWidgetContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove border from the iframe */
+  border-radius: 10px; /* Rounded corners for the iframe */
+}
+
+.CloseWidgetButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.CloseWidgetButton:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Lighter semi-transparent white background on hover */
+}
+
+.musicIconContainer {
+  position: fixed;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+
+.musicWidgetContainer {
+  position: fixed;  /* Fixed position to keep it on the top right corner */
+  top: 10px;
+/* Spacing from the top */
+  right: 10px;     /* Spacing from the right */
+  width: 300px;    /* Width of the music widget */
+height: 180px;   /* Height of the music widget */
+  z-index: 1000;   /* Ensure it's above other elements */
+  border: 1px solid
+#ccc; /* Optional: adds a border around the widget */
+  border-radius: 5px; /* Optional: rounds the corners of the widget's border
+*/
+  background: #ffffff; /* Optional: background color */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds a shadow
+effect */
+opacity: 50%;
+}
+
+.musicWidgetContainer iframe {
+  width: 100%;     /* Takes the full width of the musicWidgetContainer */
+  height:
+100%;    /* Takes the full height of the musicWidgetContainer */
+  border: none;    /* Removes the border from the iframe */
+}
+
+/*
+Style for the close widget button */
+.CloseWidgetButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+

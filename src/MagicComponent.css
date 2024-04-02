@@ -1,0 +1,25 @@
+.magic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.magic-button {
+  background-color: #4e5aef;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.magic-menu {
+  margin-top: 5px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.magic-menu button {
+  display: block;
+  width: 100%;
+}
